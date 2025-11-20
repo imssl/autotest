@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT30.125S">
+  <Period id="0">
+    <AdaptationSet id="0" contentType="video" maxWidth="640" maxHeight="360" frameRate="12288/512" segmentAlignment="true" par="16:9">
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
+      <Representation id="0" bandwidth="378399" codecs="avc1.64000d" mimeType="video/mp4" sar="1:1" width="416" height="234">
+        <SegmentTemplate timescale="12288" presentationTimeOffset="1019" initialization="dash/video-H264-234-320k_init.mp4" media="dash/video-H264-234-320k_$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="1019" d="49152" r="6" />
+            <S t="345083" d="26112" />
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+      <Representation id="1" bandwidth="1053343" codecs="avc1.64001e" mimeType="video/mp4" sar="1:1" width="640" height="360">
+        <SegmentTemplate timescale="12288" presentationTimeOffset="1019" initialization="dash/video-H264-360-860k_init.mp4" media="dash/video-H264-360-860k_$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="1019" d="49152" r="6" />
+            <S t="345083" d="26112" />
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="1" contentType="audio" lang="en" startWithSAP="1" segmentAlignment="true" label="English">
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
+      <Label>English</Label>
+      <Representation id="2" bandwidth="126501" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="48000">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+        <SegmentTemplate timescale="48000" presentationTimeOffset="3980" initialization="dash/audio-en-AAC-2ch-118k_init.mp4" media="dash/audio-en-AAC-2ch-118k_$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="45888" d="146432" />
+            <S t="192320" d="192512" />
+            <S t="384832" d="191488" />
+            <S t="576320" d="192512" />
+            <S t="768832" d="191488" />
+            <S t="960320" d="192512" />
+            <S t="1152832" d="191488" />
+            <S t="1344320" d="96256" />
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="2" contentType="audio" lang="es" startWithSAP="1" segmentAlignment="true" label="Spanish">
+      <Label>Spanish</Label>
+      <Representation id="3" bandwidth="135137" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="44100">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+        <SegmentTemplate timescale="44100" presentationTimeOffset="3657" initialization="dash/audio-es-AAC-2ch-128k_init.mp4" media="dash/audio-es-AAC-2ch-128k_$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="177152" />
+            <S t="177152" d="176128" r="1" />
+            <S t="529408" d="177152" />
+            <S t="706560" d="176128" r="2" />
+            <S t="1234944" d="88064" />
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="3" contentType="audio" lang="fr" startWithSAP="1" segmentAlignment="true" label="French">
+      <Label>French</Label>
+      <Representation id="4" bandwidth="132096" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="44100">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+        <SegmentTemplate timescale="44100" presentationTimeOffset="3657" initialization="dash/audio-fr-AAC-2ch-128k_init.mp4" media="dash/audio-fr-AAC-2ch-128k_$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="177152" />
+            <S t="177152" d="176128" r="1" />
+            <S t="529408" d="177152" />
+            <S t="706560" d="176128" r="2" />
+            <S t="1234944" d="88064" />
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="4" contentType="audio" lang="hu" startWithSAP="1" segmentAlignment="true" label="Hungarian">
+      <Label>Hungarian</Label>
+      <Representation id="5" bandwidth="135353" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="44100">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+        <SegmentTemplate timescale="44100" presentationTimeOffset="3657" initialization="dash/audio-hu-AAC-2ch-128k_init.mp4" media="dash/audio-hu-AAC-2ch-128k_$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="177152" />
+            <S t="177152" d="176128" r="1" />
+            <S t="529408" d="177152" />
+            <S t="706560" d="176128" r="2" />
+            <S t="1234944" d="88064" />
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="5" contentType="audio" lang="spl" startWithSAP="1" segmentAlignment="true" label="Spanish Latin">
+      <Label>Spanish Latin</Label>
+      <Representation id="6" bandwidth="133434" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="44100">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+        <SegmentTemplate timescale="44100" presentationTimeOffset="3657" initialization="dash/audio-spl-AAC-2ch-128k_init.mp4" media="dash/audio-spl-AAC-2ch-128k_$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="177152" />
+            <S t="177152" d="176128" r="1" />
+            <S t="529408" d="177152" />
+            <S t="706560" d="176128" r="2" />
+            <S t="1234944" d="88064" />
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="6" contentType="audio" lang="pbr" startWithSAP="1" segmentAlignment="true" label="Brazilian Portuguese">
+      <Label>Brazilian Portuguese</Label>
+      <Representation id="7" bandwidth="136558" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="44100">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+        <SegmentTemplate timescale="44100" presentationTimeOffset="3657" initialization="dash/audio-pbr-AAC-2ch-128k_init.mp4" media="dash/audio-pbr-AAC-2ch-128k_$Number$.m4s" startNumber="1">
+          <SegmentTimeline>
+            <S t="0" d="177152" />
+            <S t="177152" d="176128" r="1" />
+            <S t="529408" d="177152" />
+            <S t="706560" d="176128" r="2" />
+            <S t="1234944" d="88064" />
+          </SegmentTimeline>
+        </SegmentTemplate>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
